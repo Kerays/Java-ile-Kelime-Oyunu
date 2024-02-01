@@ -1,0 +1,50 @@
+# Java ile Kelime Oyunu
+ Gönlümüzde taht kuran sevilen yarışma olan Kelime Oyununun Java dilinde yapılan oyunu
+ 
+ Çekilen soruları veritabanına yükleyemedik. 
+
+
+Oynayabilmek istiyorsanız aşağıda yazılanları yapmak zorundasınız.
+
+
+
+1 - Bilgisayarınıza MySQL Workbench'i yükleyin ve Hizmetler(Services) kısmından veritabanı hizmetini açın.
+
+
+
+2 - Dosyalar içinde bulunan KelimeOyunuDatabase.sql adlı dosyayı MySQL Workbench ile açın.
+
+
+
+
+3 - Kaynak kodlarında DB.java dosyasında, DB sınıfında bulunan,
+
+con = DriverManager.getConnection("jdbc:mysql://localhost:3306/kelime_oyunu", "root", "root"); kod parçacığındaki
+
+root kısımlarını MySQL Workbench üzerinde oluşturduğunuz kullanıcı adı ve şifreyle değiştirin.
+
+
+
+
+4 - jdbc:mysql://localhost:3306/
+
+localhost:3306 kısmı herkeste aynı değildir onu da uygulamadaki değerle değiştirmeniz gerekmektedir.
+
+
+
+Kısacası size verdiğimiz veritabanını MySQL Workbench'e ekleyip yukarıda verdiğim DB sınıfındaki kod parçacığını kendinize uygun şekilde değiştireceksiniz.
+Video izleme sitelerine "MySQL nasıl kurulur, nasıl bağlanılır" ve "MySQL Workbench Kurulumu" yazarsanız kurulumu izleyerek de kendinize uyarlayabilirsiniz.
+
+
+
+Ek////
+
+NewMain metodu uygulamayı JavaFX kullanarak oluşturduğumuzdan dolayı exe dosyası oluştururken sorun yaşamamak için konulmuştur.
+
+Siz de isterseniz exe dosyası oluşturabilirsiniz.
+
+
+
+OyunEkranController.java dosyasındaki kodlar ana oyun için tasarlanmıştır.
+
+Bu dosyaya binaen oluşturulan OyunEkranControllerPink.java, OyunEkranControllerGreen.java, OyunEkranControllerBlue.java, OyunEkranControllerOrange.java dosyaları ekrana verilen png dosyalarında değişiklik yapıldığı için ayrı dosya olarak sunulmuştur.
